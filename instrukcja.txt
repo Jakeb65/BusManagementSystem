@@ -1,0 +1,24 @@
+W folderze z projektem znajdują się kolejno:
+- folder bazy danych, zawiera podfoldery z kodem SQL oraz zrzutami ekranu gotowej bazy danych,
+- folder aplikacji, zawiera cały kod aplikacji po stronie klienta oraz pliki potrzebne to prawidłowego działania programu,
+- folder serwera - zawiera cały kod aplikacji po stronie serwera oraz pliki potrzebne to prawidłowego działania programu,
+- folder ze zrzutami z aplikacji - pokazuje jak powinny wyglądać poszczególne segmenty aplikacji,
+- sprawozdanie,
+- dokumentacja javadoc.
+
+Aby aplikacja działała poprawnie oraz była skonfigurowana dokładnie tak jak na naszych komputerach należy wykonać następujące kroki:
+
+1 - Baza danych:
+- pobrać program XAMPP Control Panel i uruchomić usługi Apache oraz MySQL,
+- w przeglądarce wpisać adres localhost/phpmyadmin,
+- stworzyć nową bazę danych o nazwie busdata i zaimportować do niej kod SQL bazy danych,
+- w tabeli admin dodać użytkownika który będzie miał prawo do logowania.
+
+2 - Program aplikacji:
+- pobrać program Intelij,
+- otworzyć za jego pomocą w osobnych okanch folder z aplikacją od strony klienta oraz serwera,
+- po otworzeniu program zaproponuje nam import odpowiednich plików SDK/JDK - należy się zgodzić w obu programach,
+- na pasku menu programów nacisnąć file/project structure, w zakładce Project wybrać wersję SDK 11 oraz language level 8 a w zakładce Modules powinien być wybrany Moduł SDK 11. Należy również sprawdzić czy w zakładce SDKs pod Platform settings czy została wybrana odpowiednia ścieżka do pliku JDK dla wersji 11 o nazwie jdk1.8.0_202
+
+3 - włączenie programu:
+Jeśli xampp oraz usługi apache oraz mysql są włączone można przejść do włączenia aplikacji. w Tym celu należy uruchomić najpierw aplikację serwera, a po uzyskaniu komunikatu w konsoli, włączyć aplikacje klienta. Pozostało się zalogować i korzystać z aplikacji.
